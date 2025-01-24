@@ -22,17 +22,23 @@ public class GameListController {
     @Autowired
     private GameService gameService;
 
+
+    // GET Find ALL
     @GetMapping
     public List<GameListDTO> findAll(){
         List<GameListDTO> result = gameListService.findAll();
         return result;
     }
 
+
+    //GET by ID
     @GetMapping(value = "/{listId}/games")
     public List<GameMinDTO> findByList(@PathVariable Long listId){
         List<GameMinDTO> result = gameService.findByList(listId);
         return result;
     }
+
+    // POST replace on list via Body
     @PostMapping (value = "/{listId}/replacement")
     public void move(@PathVariable Long listId, @RequestBody ReplacemantDTO body){
         gameListService.move(listId, body.getSourceIndex(), body.getDestinationIndex());
