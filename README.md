@@ -11,10 +11,10 @@ A aplicação consiste em uma lista de games, onde é possivel observar todos os
 
 ## Documentação Swagger
 
-
+![Swagger](https://github.com/user-attachments/assets/2c6fbaf9-532b-49eb-9cb4-710af90d8937)
 
 ## Modelo conceitual
-
+![Image](https://github.com/user-attachments/assets/a2f8cd63-96d2-4f0a-a1fa-6f2f3b700a2e)
 
 # Tecnologias utilizadas
 ## Back end
